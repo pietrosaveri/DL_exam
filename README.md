@@ -28,8 +28,6 @@ The project utilizes a U-Net architecture for image segmentation.
 
 *   **Basic U-Net:** A simple U-Net model was initially built and tested to ensure the architecture and training pipeline were functioning correctly. This model had fewer layers and filters.
 
-<img width="1161" height="721" alt="Unknown-3" src="https://github.com/user-attachments/assets/2a083a91-e5f2-41ae-9fda-db50c008b7f7" />
-
 *   **Hyperparameter Tuned U-Net:** A more complex U-Net architecture is used for hyperparameter tuning. This model includes:
     *   Encoder and Decoder paths with multiple convolutional and pooling/upsampling layers.
     *   Skip connections between corresponding encoder and decoder layers.
@@ -38,6 +36,8 @@ The project utilizes a U-Net architecture for image segmentation.
     *   `Dropout` layers and `L2 regularization` are incorporated to mitigate overfitting.
 *   **Loss Function:** `categorical_crossentropy` is used as the loss function, suitable for multiclass classification with one-hot encoded targets.
 *   **Optimizer:** The `Adam` optimizer is used for training.
+
+  <img width="800" height="497" alt="Unknown-3" src="https://github.com/user-attachments/assets/2a083a91-e5f2-41ae-9fda-db50c008b7f7" />
 
 ## Results
 
