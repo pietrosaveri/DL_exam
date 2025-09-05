@@ -1,5 +1,3 @@
-%%markdown
-
 # Image Segmentation with U-Net and Hyperparameter Tuning
 
 ## Description
@@ -23,7 +21,7 @@ The project requires the following Python libraries:
 
 ## Data
 
-The dataset is loaded from a pickle file hosted on a GitHub repository. It consists of satellite images and their corresponding segmentation masks.
+The dataset is loaded from the pickle file hosted on the GitHub repository. It consists of satellite images and their corresponding segmentation masks.
 
 *   **Initial Shape:** The images have an initial shape of (1305, 256, 256, 3) and the masks have a shape of (1305, 256, 256, 1).
 *   **Resized Shape:** The images and masks are resized to (128, 128). After resizing and augmentation, the dataset contains 8 times the original number of samples. The final shapes are (10440, 128, 128, 3) for images and (10440, 128, 128, 6) for one-hot encoded masks.
