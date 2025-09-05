@@ -4,21 +4,6 @@
 
 This project focuses on performing image segmentation using a U-Net architecture. The goal is to classify each pixel of an image into one of six predefined classes. The project involves loading a dataset of satellite images and their corresponding masks, preprocessing the data through resizing, augmentation, shuffling, one-hot encoding, and normalization. Hyperparameter tuning and nested cross-validation are employed to find the optimal model configuration.
 
-## Requirements
-
-The project requires the following Python libraries:
-
-*   `numpy`: For numerical operations and array manipulation.
-*   `cv2`: OpenCV library for image processing, specifically for resizing.
-*   `matplotlib.pyplot`: For visualizing images and training results.
-*   `pickle`: For loading the dataset from a pickle file.
-*   `tensorflow`: Deep learning framework for building and training the U-Net model.
-*   `imgaug`: For image augmentation techniques.
-*   `sklearn`: For data splitting (train-test split) and shuffling.
-*   `keras.utils.to_categorical`: For one-hot encoding the masks.
-*   `keras_tuner`: For hyperparameter tuning.
-*   `visualkeras`: For visualizing the model architecture.
-
 ## Data
 
 The dataset is loaded from the pickle file hosted on the GitHub repository. It consists of satellite images and their corresponding segmentation masks.
@@ -42,6 +27,9 @@ The following steps were taken to preprocess and prepare the data:
 The project utilizes a U-Net architecture for image segmentation.
 
 *   **Basic U-Net:** A simple U-Net model was initially built and tested to ensure the architecture and training pipeline were functioning correctly. This model had fewer layers and filters.
+
+<img width="1161" height="721" alt="Unknown-3" src="https://github.com/user-attachments/assets/2a083a91-e5f2-41ae-9fda-db50c008b7f7" />
+
 *   **Hyperparameter Tuned U-Net:** A more complex U-Net architecture is used for hyperparameter tuning. This model includes:
     *   Encoder and Decoder paths with multiple convolutional and pooling/upsampling layers.
     *   Skip connections between corresponding encoder and decoder layers.
@@ -52,6 +40,8 @@ The project utilizes a U-Net architecture for image segmentation.
 *   **Optimizer:** The `Adam` optimizer is used for training.
 
 ## Results
+
+<img width="831" height="418" alt="Unknown" src="https://github.com/user-attachments/assets/d74bf6e2-39cc-40c3-ac65-7f8397c2cfd2" />
 
 Hyperparameter tuning was performed using `RandomSearch` from `keras-tuner` in conjunction with nested cross-validation.
 
