@@ -41,8 +41,6 @@ The project utilizes a U-Net architecture for image segmentation.
 
 ## Results
 
-<img width="831" height="418" alt="Unknown" src="https://github.com/user-attachments/assets/d74bf6e2-39cc-40c3-ac65-7f8397c2cfd2" />
-
 Hyperparameter tuning was performed using `RandomSearch` from `keras-tuner` in conjunction with nested cross-validation.
 
 *   **Hyperparameter Tuning:** The optimal hyperparameters for the learning rate, batch size, dropout rate, number of filters in convolutional layers, and L2 regularization weight were determined.
@@ -50,6 +48,8 @@ Hyperparameter tuning was performed using `RandomSearch` from `keras-tuner` in c
 *   **Final Accuracy:** The best model found through hyperparameter tuning was trained on the entire training dataset. The final test accuracy achieved is approximately 0.8.
 *   **Learning Curve:** Plots showing the training and validation loss and accuracy over epochs are generated to visualize the training progress and assess for overfitting.
 *   **Visualization of Masks:** Sample images, their true masks, and the masks predicted by the best model are displayed to qualitatively assess the model's performance.
+
+<img width="831" height="418" alt="Unknown" src="https://github.com/user-attachments/assets/d74bf6e2-39cc-40c3-ac65-7f8397c2cfd2" />
 
 ## Conclusion
 
